@@ -1,4 +1,8 @@
 # PA_GCS_Data
+Packages needed
+1) mavros
+2) keyboard (https://github.com/lrse/ros-keyboard)
+
 
 How Code works:
 1) Subscribes from following mavros topics (message type)
@@ -14,3 +18,29 @@ How Code works:
 
 2) Subsribe from the keyboard/keydown topic to check fro key press
 3) if key is presses, print the data on terminal and save into csv file
+
+
+To Run
+Follow the instructions on https://ardupilot.org/dev/docs/ros-sitl.html
+You shoud have an edited version of apm.launch in ~/catkin_was/launch
+1) Terminal 1
+
+        $ cd ~/ardupilot
+        $ sim_vehicle.py -v ArduCopter gazebo-iris  --map --console -L SW
+        
+2) Terminal 2
+
+        $ cd ~/catkin_was/launch
+        $ roslaunch apm.launch
+
+3) Terminal 3
+
+        $ roscd
+        $ cd ..
+        $ rosrun keyboard keyboard
+
+4) Terminal 4
+
+        $ roscd
+        $ cd ..
+        $ rosrun fcu_monitor FCU_monitor.py
