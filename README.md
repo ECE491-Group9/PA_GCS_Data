@@ -2,10 +2,13 @@
 
 How Code works:
 1) Subscribes from following mavros topics (message type)
+
         - global_position/global (sensor_msgs/NavSatFix)
               Get the Latitude and Longitude
+        
         - global_position/rel_alt (std_msgs/Float64)
               Get the altitude
+        
         - imu/data (sensor_msgs/imu)
               Calculate for the yaw angle
 
