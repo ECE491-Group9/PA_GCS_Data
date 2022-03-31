@@ -45,4 +45,4 @@ You shoud have an edited version of apm.launch in ~/catkin_was/launch
 
         $ roscd
         $ cd ..
-        $ rosrun fcu_monitor FCU_monitor.py
+        $ rosrun pa_gcs_data FCU_monitor.py
