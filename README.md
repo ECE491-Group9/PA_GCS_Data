@@ -1,4 +1,4 @@
-# PA_GCS_Data
+# pa_gcs_data
 Packages needed
 1) mavros
 2) keyboard (https://github.com/lrse/ros-keyboard)
