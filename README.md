@@ -26,7 +26,7 @@ You shoud have an edited version of apm.launch in ~/catkin_was/launch
 1) Terminal 1
 
         $ cd ~/ardupilot
-        $ sim_vehicle.py -v ArduCopter gazebo-iris  --map --console -L SW
+        $ sim_vehicle.py -v ArduCopter --map --console -L SW
         
 2) Terminal 2
 
