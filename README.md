@@ -30,7 +30,9 @@ You shoud have an edited version of apm.launch in ~/catkin_was/launch
         
 2) Terminal 2
 
-        $ cd ~/catkin_was/launch
+        $ roscd
+        $ cd ..
+        $ roscd launch
         $ roslaunch apm.launch
 
 3) Terminal 3
